@@ -1,0 +1,14 @@
+.main{
+    display: flex;
+  
+
+
+}
+
+.childdiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: x-large;
+
+}

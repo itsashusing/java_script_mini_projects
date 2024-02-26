@@ -1,0 +1,43 @@
+.main {
+  background-image: url("https://www.adhamdannaway.com/wp-content/themes/dannaway/images/adham-dannaway-designer-coder.jpg");
+  background-size: cover;
+}
+.content {
+  display: flex;
+  position: relative;
+  top: 30%;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2%;
+}
+.codingtext {
+  margin: 12% 0px;
+}
+.bottom {
+  display: flex;
+  justify-content: center;
+}
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  justify-content: space-around;
+}
+.paragraph {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  padding: 1%;
+  width: 30%;
+}
+ul li:hover {
+  color: #FA8072;
+  transform: scaleX(1.1);
+  font-weight: bold;
+}
+a{
+  text-decoration: none;
+}
