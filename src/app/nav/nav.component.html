@@ -1,28 +1,68 @@
-<div class="main">
+<div class="main" [ngClass]="{ back: isDark }">
   <div>
-   
-      <img id="logo" src="../../assets/images/Screenshot 2024-02-26 131445.png"
-    />
+    <img id="logo" src="../../assets/images/Screenshot 2024-02-26 131445.png" />
   </div>
 
-  <ul>
-    <li><a routerLink="">Home</a></li>
-    <li><a routerLink="/projects">Projects</a></li>
-    <li><a routerLink="/about">About</a></li>
-    <li><a routerLink="/contact">Contact</a></li>
+  <ul id="middle">
     <li>
-      <a href="../../assets/resume/ashutoshpython.pdf" download=""> Resume</a>
+      <a [ngStyle]="{ color: isDark ? 'white' : 'black' }" routerLink=""
+        >Home</a
+      >
+    </li>
+    <li>
+      <a
+        [ngStyle]="{ color: isDark ? 'white' : 'black' }"
+        routerLink="/projects"
+        >Projects</a
+      >
+    </li>
+    <li>
+      <a [ngStyle]="{ color: isDark ? 'white' : 'black' }" routerLink="/about"
+        >About</a
+      >
+    </li>
+    <li>
+      <a [ngStyle]="{ color: isDark ? 'white' : 'black' }" routerLink="/contact"
+        >Contact</a
+      >
+    </li>
+    <li>
+      <a
+        [ngStyle]="{ color: isDark ? 'white' : 'black' }"
+        href="../../assets/resume/ashutoshpython.pdf"
+        download=""
+      >
+        Resume</a
+      >
     </li>
   </ul>
 
   <ul style="padding-right: 2%">
     <li>
-      <a href="https://www.linkedin.com/in/itsashusing/" target="_blank"
+      <button class="btn btn-secondary" (click)="mode()">
+        <ng-container *ngIf="isDark; else elseTemplate">
+          <i class="bi bi-moon-stars-fill"></i>
+        </ng-container>
+        <ng-template #elseTemplate>
+          <i class="bi bi-brightness-high"></i>
+        </ng-template>
+      </button>
+    </li>
+    <li>
+      <a
+        class="btn btn-secondary"
+        [ngStyle]="{ color: isDark ? 'white' : 'black' }"
+        href="https://www.linkedin.com/in/itsashusing/"
+        target="_blank"
         ><i class="bi bi-linkedin"></i
       ></a>
     </li>
     <li>
-      <a href="https://github.com/itsashusing" target="_blank"
+      <a
+        class="btn btn-secondary"
+        [ngStyle]="{ color: isDark ? 'white' : 'black' }"
+        href="https://github.com/itsashusing"
+        target="_blank"
         ><i class="bi bi-github"></i
       ></a>
     </li>

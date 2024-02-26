@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,Input } from '@angular/core';
 
 @Component({
   selector: 'app-contact',
@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './contact.component.css',
 })
 export class ContactComponent {
+  @Input() mode!:boolean;
   name!: string;
   submit() {
     if (this.name !== null && this.name !== undefined) {

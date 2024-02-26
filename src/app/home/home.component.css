@@ -41,3 +41,6 @@ ul li:hover {
 a{
   text-decoration: none;
 }
+.para{
+  text-align: justify;
+}
