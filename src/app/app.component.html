@@ -1,5 +1,5 @@
 <app-nav #childref></app-nav>
-<div [ngClass]="{'custom': childref.isDark}">
+<div [ngClass]="{ custom: childref.isDark }">
   <router-outlet></router-outlet>
 </div>
 <app-footer [mode]="childref.isDark"></app-footer>
