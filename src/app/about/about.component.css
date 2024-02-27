@@ -1,14 +1,20 @@
-.main{
-    display: flex;
-  
-
-
+.main {
+  display: flex;
+  margin-bottom: 2%;
 }
-
-.childdiv{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: x-large;
-
+img {
+  box-shadow: 5px 8px 1px rgb(0, 0, 0);
+}
+.childdiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: x-large;
+  margin-left: 5%;
+}
+.childdiv:hover {
+  border: 1px solid salmon;
+  border-radius: 50%;
+  padding: 0 0 0 5%;
+  box-shadow: 45px -5px 25px salmon;
 }

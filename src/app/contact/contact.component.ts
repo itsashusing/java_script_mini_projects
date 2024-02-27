@@ -1,4 +1,4 @@
-import { Component,Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-contact',
@@ -6,14 +6,22 @@ import { Component,Input } from '@angular/core';
   styleUrl: './contact.component.css',
 })
 export class ContactComponent {
-  @Input() mode!:boolean;
+  @Input() mode!: boolean;
   name!: string;
+  phone!: string;
   submit() {
-    if (this.name !== null && this.name !== undefined) {
-      alert(`Sir ${this.name}I will contact you soon.`);
+   
+    if (
+      this.name !== null &&
+      this.name !== undefined &&
+      this.phone !== null &&
+      this.phone !== undefined &&
+      this.name.length > 0 &&
+      this.phone.length > 0
+    ) {
+      alert(`${this.name} Sir, I will contact you soon.`);
       window.location.href = '';
     } else {
-      console.log(this.name);
       alert('All field are mandatory.');
     }
   }

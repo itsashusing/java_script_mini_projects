@@ -1,4 +1,4 @@
-<app-nav #childref></app-nav>
+<app-nav (darkModeToggled)="handleDarkModeToggle($event)" #childref></app-nav>
 <div [ngClass]="{ custom: childref.isDark }">
   <router-outlet></router-outlet>
 </div>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-nav',
@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
 })
 export class NavComponent {
   isDark = false;
-  message='Hello this is message of child';
+  @Output() darkModeToggled = new EventEmitter<boolean>();
   mode() {
     this.isDark = !this.isDark;
-    console.log('Sending message to parent')
+    this.darkModeToggled.emit(this.isDark);
   }
 }

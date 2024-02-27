@@ -9,9 +9,6 @@
   font-weight: lighter;
   font-size: large;
   align-items: center;
-  position: fixed;
-  width: 100%;
-  z-index: +1;
 }
 
 ul {
