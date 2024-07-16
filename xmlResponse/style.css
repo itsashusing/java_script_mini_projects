@@ -1,0 +1,11 @@
+.image-div {
+  width: 300px;
+  height: 300px;
+  transition: all 0.5s ease-in-out;
+}
+
+
+img{
+  width: 100%;
+  object-fit: cover;
+}

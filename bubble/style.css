@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(150, 214, 150);
+  width: 100%;
+  height: 100%;
+}
+
+#pannal {
+  width: 80%;
+  height: 90%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#ptop {
+  width: 100%;
+  height: 10%;
+  background-color: rgb(54, 114, 64);
+  display: flex;
+  gap: 30px;
+  padding: 0px 150px;
+  justify-content: space-between;
+  font-family: "Franklin Gothic Medium" sans-serif;
+}
+
+.elm {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(8, 46, 8);
+}
+
+.elm h4 {
+  font-weight: 600;
+}
+
+.box {
+  font-weight: 600;
+  padding: 10px 15px;
+  margin-left: 5px;
+  font-size: 25px;
+  color: rgb(34, 94, 34);
+  border-radius: 5px;
+  background-color: white;
+}
+
+#pbtm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 90%;
+  width: 100%;
+  background-color: white;
+  padding: 10px;
+}
+
+#pbtm .content {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.bubble {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: whitesmoke;
+  font-weight: 900;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(19, 58, 19);
+  cursor: pointer;
+  transition: all 0.5ms ease-in-out;
+}
+
+.bubble:hover {
+  background-color: rgba(27, 90, 27, 0.719);
+}
+
+@media screen and (max-width: 665px) {
+  #ptop {
+    padding: 0px 5px;
+    justify-content: center;
+    gap: 5px;
+  }
+  .box {
+    font-size: 16px;
+    padding: 5px;
+  }
+  #pbtm {
+    align-items: initial;
+  }
+}

@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  background-color: #f6f0eb;
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration-line: none;
+}
+nav {
+  display: flex;
+  gap: 16px;
+}
+/* nav a+a{
+    margin-left: 16px;
+} */
+nav a {
+  font-weight: 700;
+  font-size: 30px;
+  color: #492118;
+}
+.logo {
+  width: 50px;
+  padding-left: 12px;
+  padding-top: 12px;
+}
+main {
+  padding: 0 10px;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  /* overflow: hidden; */
+  /* padding: 12px 32px; */
+
+  position: sticky;
+  top: 0;
+}
+.img-section {
+  margin-top: 100px;
+}
+.img-section p {
+  font-weight: 400;
+  font-size: 24px;
+  color: #492118;
+  text-align: center;
+}
+img {
+  width: 100%;
+}
+.img-container {
+  max-width: 1290px;
+  margin: 0 auto;
+}
+.section {
+  margin-top: 100px;
+}
+.section h1 {
+  font-weight: 700;
+  font-size: 48px;
+  text-align: center;
+  color: #492118;
+}
+.section .img-container {
+  max-width: 1040px;
+}
+.go-to-top {
+  text-align: right;
+  font-size: 32px;
+  color: #492118;
+  margin: 0 auto;
+  max-width: 1040px;
+  margin-top: 80px;
+}
+.go-to-top a {
+  text-decoration-line: underline;
+}
+footer p {
+  text-align: center;
+  color: #858585;
+  font-size: 24px;
+  margin-top: 80px;
+}
+.close {
+  font-size: 42px;
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  cursor: pointer;
+  display: none;
+}
+.hamburger-menu-container {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  right: -37px;
+  top: -27px;
+  display: none;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.hamburger-menu {
+  font-size: 32px;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+}
+.side-menu nav {
+  flex-direction: column;
+  display: flex;
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  padding: 48px 20px;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+.side-menu .hamburger-menu-container {
+  display: none;
+}
+@media (max-width: 1200px) {
+  nav a {
+    font-size: 20px;
+  }
+}
+@media (max-width: 900px) {
+  nav a {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+  header {
+    background-color: #f6f0eb;
+    backdrop-filter: blur(10px);
+  }
+  nav a {
+    font-size: 16px;
+  }
+  footer p {
+    font-size: 10px;
+  }
+  .close {
+    display: block;
+  }
+  .hamburger-menu-container {
+    display: block;
+  }
+}

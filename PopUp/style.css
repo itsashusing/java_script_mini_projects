@@ -1,0 +1,28 @@
+body {
+  background-color: #decdac;
+  margin: 0;
+}
+
+.popup {
+  background-color: white;
+  width: 70%;
+  height: 40vh;
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: 0px 10px 5px 2px rgb(83, 83, 83);
+  /* display: none; */
+  transform: scale(0);
+  transition: all 0.3s ease-in-out;
+}
+.popup.open {
+  transform: scale(1);
+}
+.close {
+  font-size: 48px;
+  font-weight: 700;
+  float: right;
+  padding-right: 10px;
+  cursor: pointer;
+}
